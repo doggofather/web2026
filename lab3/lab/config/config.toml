@@ -1,0 +1,13 @@
+ServiceHost = "0.0.0.0"
+ServicePort = 8080
+
+# НАСТРОЙКИ Redis
+[Redis]
+
+# Таймауты в миллисекундах
+DialTimeout = "10s"
+ReadTimeout = "10s"
+
+[JWT]
+token = "mysecretkey123"
+expires_in = "24h"
