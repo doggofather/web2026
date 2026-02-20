@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Митапы</title>
+  <link rel="stylesheet" href="/styles/meetup_style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Фоны и градиент -->
+    <div class="header-bg1"></div>
+    <div class="header-bg2"></div>
+    <div class="background-gradient"></div>
+    
+    <!-- Заголовок -->
+    <div class="title">{{ .meetup.Title }}</div>
+    
+    <!-- Основной контент -->
+    <div class="content-box">
+      <div class="speakers">
+        {{ range .data }}
+        <div>{{ .Name }}</div> <!-- Столбец 1: Имя -->
+        <div>{{ .Title }}</div> <!-- Столбец 2: Тема -->
+        <div> <!-- Столбец 3: Кнопка -->
+          <form action="/delete-speaker" method="POST" style="display: inline;">
+            <input type="hidden" name="speaker_id" value="{{ .ID }}">
+            <button type="submit">Удалить</button>
+          </form>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    
+    <!-- Дата и место (исправил позиции и стили, чтобы не конфликтовали) -->
+    <div style="width: 893px; height: 48px; position: absolute; left: 162px; top: 222px; 
+                text-align: center; color: black; font-size: 24px; font-family: Montserrat;">
+      Дата: {{ .meetup.Date }}
+    </div>
+    <div style="width: 893px; height: 48px; position: absolute; left: 162px; top: 258px; 
+                text-align: center; color: black; font-size: 24px; font-family: Montserrat;">
+      Место: {{ .meetup.Location }}
+    </div>
+
+    <div style="position: absolute; top: 0; left: 0; width: 50px; height: 50px; border-radius: 50%;">
+      <a href="http://localhost:8080/speakers" class="button" style="display: block; width: 100%; height: 100%; text-decoration: none; border-radius: 50%;">
+        <img src="/img/home.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"/>
+      </a>
+    </div>
+
+  </div> <!-- Закрытие container -->
+</body>
+</html>
