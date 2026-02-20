@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ваш Заголовок</title>
+  <link rel="stylesheet" href="/static/styles/speaker_style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="bg-layer1"></div>
+    <div class="bg-layer2"></div>
+    <div class="bg-layer3"></div>
+    <div class="bg-layer4"></div>
+    <div class="content-text">
+      {{ .speaker.Description }}
+    </div>
+    <div class="button-meetup">
+      <a href="http://localhost:8080/meetup" class="button" id="tecna-button">
+        <div>meet up!</div>
+      </a>
+    </div>
+    <div class="title-flora">{{ .speaker.Name }}</div>
+    <img class="image-flora" src="/static/img/{{ .speaker.ID }}.png" />
+  </div>
+</body>
+</html>
