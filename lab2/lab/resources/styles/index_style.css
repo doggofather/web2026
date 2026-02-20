@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --Schemes-On-Surface: #1D1B20;
+}
+
+.container {
+  width: 1276px;
+  height: 1270px;
+  position: relative;
+  background: linear-gradient(180deg, white 0%, #999999 100%);
+  overflow: hidden;
+}
+
+.background {
+  width: 1276px;
+  height: 1270px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: linear-gradient(180deg, #B6E3EB 0%, #FFE8FC 100%);
+}
+
+.card-bg1 {
+  opacity: 0.90;
+  background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0.30) 100%);
+  border-radius: 30px;
+  position: absolute;
+}
+
+.card-bg2 {
+  background: rgba(212.01, 212.01, 212.01, 0.10);
+  border-radius: 32px;
+  border: 3px rgba(255, 255, 255, 0.50) solid;
+  backdrop-filter: blur(17.50px);
+  position: absolute;
+}
+
+.name {
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 700;
+  word-wrap: break-word;
+  position: absolute;
+}
+
+.format {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 400;
+  word-wrap: break-word;
+  position: absolute;
+}
+
+.button {
+  background: #F5F5F5;
+  overflow: hidden;
+  border-radius: 30px;
+  position: absolute;
+}
+
+.button-text {
+  left: 25px;
+  top: 8px;
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 13px;
+  font-family: Montserrat;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.image {
+  position: absolute;
+  border-radius: 20px;
+}
+
+.header-bg1 {
+  background: linear-gradient(133deg, #F9F4F4 0%);
+  border-radius: 30px;
+  position: absolute;
+}
+
+.header-bg2 {
+  background: linear-gradient(133deg, #FFFDFD 0%);
+  border-radius: 30px;
+  position: absolute;
+}
+
+.icon-bg {
+  opacity: 0.75;
+  overflow: hidden;
+  position: absolute;
+}
+
+.icon-inner {
+  left: 4.25px;
+  top: 4.25px;
+  position: absolute;
+  background: var(--Schemes-On-Surface, #1D1B20);
+}
+
+.shape-bg {
+  opacity: 0.70;
+  overflow: hidden;
+  position: absolute;
+}
+
+.shape-inner {
+  left: 60px;
+  top: 520px;
+  width: 63.35px;
+  height: 59.33px;
+  position: fixed;
+}
+
+.number {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 700;
+  word-wrap: break-word;
+  position: absolute;
+}
+
+/* Уникальные позиции для каждого персонажа */
+#stella-card-bg1 {
+  width: 353.10px;
+  height: 255px;
+  left: 199.90px;
+  top: 895px;
+}
+
+#stella-card-bg2 {
+  width: 355px;
+  height: 251.92px;
+  left: 198px;
+  top: 895px;
+}
+
+#stella-name {
+  width: 100px;
+  height: 30px;
+  left: 298px;
+  top: 908px;
+}
+
+#stella-format {
+  width: 200px;
+  height: 100px;
+  left: 325px;
+  top: 961px;
+}
+
+#stella-button {
+  width: 130px;
+  height: 33px;
+  left: 289px;
+  top: 1084px;
+}
+
+#stella-image {
+  width: 130px;
+  height: 85px;
+  left: 214px;
+  top: 968px;
+  opacity: 0.85;
+}
+
+#flora-card-bg1 {
+  width: 353.10px;
+  height: 255px;
+  left: 199.90px;
+  top: 592px;
+}
+
+#flora-card-bg2 {
+  width: 355px;
+  height: 251.88px;
+  left: 198px;
+  top: 592px;
+}
+
+#flora-name {
+  width: 100px;
+  height: 30px;
+  left: 298px;
+  top: 614px;
+}
+
+#flora-format {
+  width: 200px;
+  height: 100px;
+  left: 325px;
+  top: 663px;
+}
+
+#flora-button {
+  width: 130px;
+  height: 33px;
+  left: 289px;
+  top: 789px;
+}
+
+#flora-image {
+  width: 120px;
+  height: 120px;
+  left: 214px;
+  top: 657px;
+  opacity: 0.85;
+}
+
+#bloom-card-bg1 {
+  width: 353.10px;
+  height: 234px;
+  left: 199.90px;
+  top: 295px;
+}
+
+#bloom-card-bg2 {
+  width: 355px;
+  height: 255px;
+  left: 198px;
+  top: 295px;
+}
+
+#bloom-name {
+  width: 100px;
+  height: 30px;
+  left: 311px;
+  top: 318px;
+}
+
+#bloom-format {
+  width: 200px;
+  height: 100px;
+  left: 325px;
+  top: 365px;
+}
+
+#bloom-button {
+  width: 130px;
+  height: 33px;
+  left: 296px;
+  top: 490px;
+}
+
+#bloom-image {
+  width: 120px;
+  height: 96px;
+  left: 214px;
+  top: 364px;
+}
+
+#musa-card-bg1 {
+  width: 353.09px;
+  height: 255px;
+  left: 713.91px;
+  top: 592px;
+}
+
+#musa-card-bg2 {
+  width: 355px;
+  height: 251.90px;
+  left: 712px;
+  top: 592px;
+}
+
+#musa-name {
+  width: 100px;
+  height: 30px;
+  left: 819px;
+  top: 598px;
+}
+
+#musa-format {
+  width: 200px;
+  height: 100px;
+  left: 842px;
+  top: 654px;
+}
+
+#musa-button {
+  width: 130px;
+  height: 34px;
+  left: 819px;
+  top: 777px;
+}
+
+#musa-image {
+  width: 120px;
+  height: 126px;
+  left: 734px;
+  top: 641px;
+}
+
+#tecna-card-bg1 {
+  width: 353.10px;
+  height: 255px;
+  left: 711.90px;
+  top: 295px;
+}
+
+#tecna-card-bg2 {
+  width: 355px;
+  height: 251.93px;
+  left: 710px;
+  top: 295px;
+}
+
+#tecna-name {
+  width: 100px;
+  height: 30px;
+  left: 829px;
+  top: 319px;
+}
+
+#tecna-format {
+  width: 200px;
+  height: 100px;
+  left: 842px;
+  top: 364px;
+}
+
+#tecna-button {
+  width: 130px;
+  height: 33px;
+  left: 829px;
+  top: 484px;
+}
+
+#tecna-image {
+  width: 120px;
+  height: 80px;
+  left: 731px;
+  top: 376px;
+  opacity: 0.85;
+}
+
+.header-bg1 {
+  width: 983px;
+  height: 68px;
+  left: 150px;
+  top: 181px;
+}
+
+.header-bg2 {
+  width: 903px;
+  height: 54px;
+  left: 221px;
+  top: 188px;
+}
+
+.icon-bg {
+  width: 34px;
+  height: 34px;
+  left: 169px;
+  top: 197px;
+}
+
+.icon-inner {
+  width: 25.50px;
+  height: 25.50px;
+}
+
+
+.number {
+  width: 29.69px;
+  height: 53.77px;
+  left: 120.31px;
+  top: 693px;
+}
+
+.home-bg {
+  opacity: 0.70;
+  overflow: hidden;
+  position: absolute;
+}
+
+.home-inner {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
